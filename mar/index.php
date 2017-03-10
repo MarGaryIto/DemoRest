@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <?php
-  $puerto = "localhost";
-  $usuario = "root";
-  $contrasena = "";
+  include ("php/conexion.php");
 
   $conexion = mysql_connect($puerto,$usuario,$contrasena);
   mysql_select_db("examen");

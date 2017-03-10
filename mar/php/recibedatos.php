@@ -2,12 +2,10 @@
 	$nombre = $_POST['nombre'];
 	$descripcion = $_POST['descripcion'];
 	$existencias = $_POST['existencias'];
-	$precio_compra = $POST['precio_compra'];
-	$precio_venta = $POST['precio_venta'];
+	$precio_compra = $_POST['precio_compra'];
+	$precio_venta = $_POST['precio_venta'];
 
-	$puerto = "localhost";
-	$usuario = "root";
-	$contrasena = "";
+	include ("conexion.php");
 
 	mysql_connect($puerto,$usuario,$contrasena);
 	mysql_select_db("examen");

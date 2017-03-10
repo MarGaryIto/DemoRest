@@ -7,9 +7,7 @@
 	$precio_compra = $POST['precio_compra'];
 	$precio_venta = $POST['precio_venta'];
 
-    $puerto = "localhost";
-    $usuario = "root";
-    $contrasena = "";
+    include ("conexion.php");
 
     mysql_connect($puerto,$usuario,$contrasena);
    	mysql_select_db("examen");

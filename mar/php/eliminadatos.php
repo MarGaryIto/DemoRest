@@ -1,9 +1,7 @@
 <?php
 	$id = $_REQUEST['id'];
 
-    $puerto = "localhost";
-    $usuario = "root";
-    $contrasena = "";
+    include ("conexion.php");
 
     mysql_connect($puerto,$usuario,$contrasena);
    	mysql_select_db("examen");

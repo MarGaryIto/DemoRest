@@ -40,9 +40,7 @@
 
           $query="SELECT * FROM productos where id='$id'";
 
-          $puerto = "localhost";
-          $usuario = "root";
-          $contrasena = "";
+          include ("php/conexion.php");
 
           $conexion = mysql_connect($puerto,$usuario,$contrasena);
           mysql_select_db("examen");
